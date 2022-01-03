@@ -1,4 +1,4 @@
-# urldisc
+# urld
 
 URL брут-форсер.
 

@@ -1,10 +1,10 @@
 CC ?= /bin/cc
-CFLAGS = -g -Wall -Wextra -Wconversion -Wstrict-prototypes
+CFLAGS = -g -Wall -Wconversion -Wstrict-prototypes -std=c99 -Wno-unused-result
 LDLIBS = -lcurl
 
 SOURCES = $(wildcard *.c)
 OBJECTS = $(patsubst %.c, obj/%.o, $(SOURCES))
-BINARY = bin/urldisc
+BINARY = bin/urld
 
 .PHONY: all build clean run
 
